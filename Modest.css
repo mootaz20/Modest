@@ -1,0 +1,767 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    background-color: #C8CDD2;
+}
+/* the container */
+.container{
+    width: 1170px;
+    margin: 30px auto;
+}
+/* the navbar */
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 150px;
+}
+.navbar .title{
+    margin-right: 10%;
+}
+.navbar .title a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+.navbar .theServices ul{
+    display: flex;
+    gap: 2px;
+    list-style: none;
+}
+.navbar .theServices ul li .SERVICES{
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #CF6FC1;
+}
+.navbar .theServices ul li .CONTACT{
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #FFFFFF;
+}
+.navbar .theServices ul li .CLIENTS{
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #C55050;
+}
+.navbar .theServices ul li .PORTFOLIO{
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #4876C0;
+}
+.navbar .theServices ul li .FACTS{
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #6DB4C4;
+}
+.navbar .theServices ul li a{
+    text-decoration: none;
+}
+/* the section */
+.container .content{
+    background-color: #FFFFFF;
+    /* padding: 80px 60px; */
+}
+.container .content .theJop{
+    padding: 80px 60px;
+    display: flex;
+    justify-content: space-around;
+    gap: 3%;
+}
+.container .content .theJop .text{
+    text-align: center;
+    padding: 5% 2%;
+}
+.container .content .theJop .text h3{
+    font-size: 30px;
+    font-weight: 200;
+    color: #262626;
+    margin-bottom: 5%;
+    opacity: .9;
+}
+.container .content .theJop .text p{
+    font-size: 13px;
+    color: #666666;
+    opacity: .7;
+    line-height: 30px;
+    margin-bottom: 5%;
+}
+.container .content .theJop .text button{
+    width: 120px;
+    height: 40px;
+    opacity: .4;
+    cursor: pointer;
+    font-weight: 700;
+}
+.container .content #SERVICES{
+    width:  90%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    text-align: center;
+}
+.container .content #SERVICES .box{
+    width: 309px;
+    height: 364px;
+    border: solid 2px #dddddd;
+}
+.container .content #SERVICES .box .photo{
+    width: 309px;
+    height: 55px;
+    background: url(img/s.png) no-repeat center;
+    line-height: 55px;
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.container .content #SERVICES .box .services-icon{
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-size: 46px;
+}
+.container .content #SERVICES .box .text{
+    padding: 0 20px;
+}
+.container .content #SERVICES .box .text p{
+    line-height: 30px;
+    font-size: 13px;
+    opacity: .6;
+}
+.container .content #SERVICES .box .text p a{
+    text-decoration: none;
+}
+.container .content #Facts{
+    margin: 10% 0 0 0;
+    width:  1170px;
+    height: 284px;
+    background-image: linear-gradient(to bottom, #549eae,#83cede);
+}
+.container .content #Facts .photo{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 200px;
+    background: url(img/header-bg-light-blue.png) no-repeat right;
+}
+.container .content #Facts .photo h4{
+    padding-right: 2%;
+}
+.container .content #Facts .fact{
+    height: 200px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .content #Facts .fact span{
+    font-size: 30px;
+}
+.container .content #Facts .fact .fact_2 p::before,
+.container .content #Facts .fact .fact_3 p::before,
+.container .content #Facts .fact .fact_4 p::before{
+    content: "";
+    width: 40%;
+    margin: 15% auto 15%;
+    display: block;
+    height: 3px;
+    background-color: white;
+}
+.container .content #Facts .fact .fact_1 p::before{
+    content: "";
+    width: 40%;
+    margin: 12% auto 11%;
+    display: block;
+    height: 3px;
+    background-color: white;
+}
+.container .content #Facts .fact p{
+    font-size: 18px;
+}
+.container .content #PORTFOLIO{
+    background-color: #3C619C;
+    height: 850px;
+}
+.container .content #PORTFOLIO .photo{
+    width: 21%;
+    height: 55px;
+    background: url(img/header-bg-blue.png) no-repeat left;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+}
+.container .content #PORTFOLIO .photo p{
+    font-size: 20px;
+    padding-right: 7%;
+}
+.container .content #PORTFOLIO .grid{
+    position: relative;
+    z-index: 0;
+    width: 84%;
+    background-color: white;
+    margin: 5% auto 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 3px;
+}
+.container .content #PORTFOLIO .grid .photo_1{
+    position: relative;
+}
+.container .content #PORTFOLIO .grid .photo_1 .text{
+    width: 325px;
+    height: 325px;
+    position: absolute;
+    text-align: center;
+    line-height: 325px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 23px;
+    opacity: 0;
+    background: rgba(207,111,193,0.67);
+    transition: all .9s ease ;
+}
+.container .content #PORTFOLIO .grid .photo_1 .text::before{
+    position: absolute;
+    top: 75px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_1 .text::after{
+    position: absolute;
+    bottom: 75px;
+    left: 169px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_2 .text::before{
+    position: absolute;
+    top: 75px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_2 .text::after{
+    position: absolute;
+    bottom: 75px;
+    left: 169px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_3 .text::before{
+    position: absolute;
+    top: 75px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_3 .text::after{
+    position: absolute;
+    bottom: 75px;
+    left: 169px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_4 .text::before{
+    position: absolute;
+    top: 75px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_4 .text::after{
+    position: absolute;
+    bottom: 75px;
+    left: 169px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_5 .text::before{
+    position: absolute;
+    top: 75px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_5 .text::after{
+    position: absolute;
+    bottom: 75px;
+    left: 169px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_6 .text::before{
+    position: absolute;
+    top: 75px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_6 .text::after{
+    position: absolute;
+    bottom: 75px;
+    left: 169px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.container .content #PORTFOLIO .grid .photo_1 .image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.container .content #PORTFOLIO .grid .photo_1:hover .text{
+    opacity: 1;
+}
+.container .content #PORTFOLIO .grid .photo_2{
+    position: relative;
+}
+.container .content #PORTFOLIO .grid .photo_2 .text{
+    width: 325px;
+    height: 325px;
+    position: absolute;
+    text-align: center;
+    line-height: 325px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 23px;
+    opacity: 0;
+    background: rgba(109,180,196,0.67);
+    transition: all .9s ease ;
+}
+.container .content #PORTFOLIO .grid .photo_2 .image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.container .content #PORTFOLIO .grid .photo_2:hover .text{
+    opacity: 1;
+}
+.container .content #PORTFOLIO .grid .photo_3{
+    position: relative;
+}
+.container .content #PORTFOLIO .grid .photo_3 .text{
+    width: 325px;
+    height: 325px;
+    position: absolute;
+    text-align: center;
+    line-height: 325px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 23px;
+    opacity: 0;
+    background: rgba(197,80,80,0.67);
+    transition: all .9s ease ;
+}
+.container .content #PORTFOLIO .grid .photo_3 .image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.container .content #PORTFOLIO .grid .photo_3:hover .text{
+    opacity: 1;
+}
+.container .content #PORTFOLIO .grid .photo_4{
+    position: relative;
+}
+.container .content #PORTFOLIO .grid .photo_4 .text{
+    width: 325px;
+    height: 325px;
+    position: absolute;
+    text-align: center;
+    line-height: 325px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 23px;
+    opacity: 0;
+    background: rgba(38,38,38,0.67);
+    transition: all .9s ease ;
+}
+.container .content #PORTFOLIO .grid .photo_4 .image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.container .content #PORTFOLIO .grid .photo_4:hover .text{
+    opacity: 1;
+}
+.container .content #PORTFOLIO .grid .photo_5{
+    position: relative;
+}
+.container .content #PORTFOLIO .grid .photo_5 .text{
+    width: 325px;
+    height: 325px;
+    position: absolute;
+    text-align: center;
+    line-height: 325px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 23px;
+    opacity: 0;
+    background: rgba(237,136,38,0.67);
+    transition: all .9s ease ;
+}
+.container .content #PORTFOLIO .grid .photo_5 .image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.container .content #PORTFOLIO .grid .photo_5:hover .text{
+    opacity: 1;
+}
+.container .content #PORTFOLIO .grid .photo_6{
+    position: relative;
+}
+.container .content #PORTFOLIO .grid .photo_6 .text{
+    width: 325px;
+    height: 325px;
+    position: absolute;
+    text-align: center;
+    line-height: 325px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 23px;
+    opacity: 0;
+    background: rgba(50,239,174,0.67);
+    transition: all .9s ease ;
+}
+.container .content #PORTFOLIO .grid .photo_6 .image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.container .content #PORTFOLIO .grid .photo_6:hover .text{
+    opacity: 1;
+}
+.container .content #CLIENTS{
+    background-color: #CC5757;
+    height: 400px;
+}
+.container .content #CLIENTS .photo{
+    width: 100%;
+    height: 55px;
+    background: url(img/header-bg-red.png) no-repeat right;
+    text-align: right;
+    line-height: 55px;
+    color: white;
+}
+.container .content #CLIENTS .photo p{
+    font-size: 20px;
+    padding-right: 2%;
+}
+.container .content #CLIENTS .client-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 40px auto 40px;
+    border: solid 2px white;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 1%;
+}
+.container .content #CLIENTS .client-icon i{
+    font-size: 30px;
+    color: white;
+}
+.container .content #CLIENTS .slide-text{
+    width: 84%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+.container .content #CLIENTS .slide-text h4{
+    margin: 3% auto 4%;
+}
+.container .content #CLIENTS .slide-text .line{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.container .content #CLIENTS .slide-text .line_1{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    transition: all .5s ease;
+}
+.container .content #CLIENTS .slide-text .line_1:hover{
+    height: 7px;
+    cursor: pointer;
+}
+.container .content #CLIENTS .slide-text .line_2:hover{
+    height: 7px;
+    cursor: pointer;
+}
+.container .content #CLIENTS .slide-text .line_3:hover{
+    height: 7px;
+    cursor: pointer;
+}
+.container .content #CLIENTS .slide-text .line_2{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    transition: all .5s ease;
+}
+.container .content #CLIENTS .slide-text .line_3{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    transition: all .5s ease;
+}
+.container .content #CONTACT .photo{
+    width: 21%;
+    height: 55px;
+    background: url(img/header-bg-gray.png) no-repeat left;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+}
+.container .content #CONTACT .photo p{
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 7%;
+}
+.container .content #CONTACT .do-contact{
+    width: 84%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 4% auto;
+}
+.container .content #CONTACT .do-contact .form{
+    width: 55%;
+}
+.container .content #CONTACT .do-contact .form label{
+    display: block;
+    width: 100%;
+    height: 25px;
+    margin: 0 0 7px;
+    opacity: .5;
+}
+.container .content #CONTACT .do-contact .form input{
+    display: block;
+    width: 100%;
+    height: 28px;
+    margin: 0 0 15px;
+    opacity: .5;
+}
+.container .content #CONTACT .do-contact .form textarea{
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 0 0 15px;
+    opacity: .5;
+}
+.container .content #CONTACT .do-contact .form input[type="submit"]{
+    width: 30%;
+    height: 50px;
+    opacity: 1;
+    border: solid 2px black;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container .content #CONTACT .do-contact .map .this-map{
+    padding-top: 32px;
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+}
+.container .content #CONTACT .do-contact .map .contact{
+    display: flex;
+    justify-content: space-around;
+    margin: 4% 0;
+}
+.container .content #CONTACT .do-contact .map .contact .contact-number{
+    width: 50%;
+    line-height: 40px;
+    opacity: .6;
+}
+.container .content #CONTACT .do-contact .map .contact .contact-number a{
+    text-decoration: none;
+    color: blue;
+}
+.container .content #CONTACT .do-contact .map .contact .contact-number span{
+    opacity: .9;
+    font-weight: bold;
+}
+.container .content #CONTACT .do-contact .map .contact .contact-text{
+    width: 50%;
+    line-height: 25px;
+    text-align: center;
+    opacity: .6;
+}
+.container .content .footer{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 60px;
+    background-color: #262626;
+    display: flex;
+    justify-content: space-between;
+}
+.container .content .footer .back-to-top{
+    position: absolute;
+    top: -30px;
+    left: 45%;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    border: solid 1px #262626;
+    background-color: #262626;
+    border-radius: 50%;
+}
+.container .content .footer .back-to-top i{
+    color: white;
+}
+.container .content .footer .copy{
+    padding-left: 20px;
+    line-height: 60px;
+    color: white;
+    font-size: 13px;
+}
+.container .content .footer .icons{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.container .content .footer .icons .facebook{
+    width: 30%;
+    display: flex;
+    gap: 15px;
+    line-height: 60px;
+    cursor: pointer;
+}
+.container .content .footer .icons .facebook .Icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px white ;
+    line-height: 30px; 
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.container .content .footer .icons .twitter{
+    width: 30%;
+    display: flex;
+    gap: 15px;
+    line-height: 60px;
+    cursor: pointer;
+}
+.container .content .footer .icons .twitter .Icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px white ;
+    line-height: 30px; 
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.container .content .footer .icons .youtupe{
+    width: 30%;
+    display: flex;
+    gap: 15px;
+    line-height: 60px;
+    cursor: pointer;
+}
+.container .content .footer .icons .youtupe .Icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px white ;
+    line-height: 30px; 
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
